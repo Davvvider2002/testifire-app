@@ -1,11 +1,7 @@
 [build]
-  command = "npm install && npm run build:client"
+  command = "npm install && npm run build"
   publish = "dist/spa"
 
-[build.environment]
-  NODE_VERSION = "18"
-
-# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
